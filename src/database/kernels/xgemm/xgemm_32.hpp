@@ -19,6 +19,7 @@ const DatabaseEntry XgemmSingle = {
           { kDeviceNameDefault                                        , Params{ 0, 1, 32, 2, 8, 8, 16, 16, 16, 64, 1, 1, 0, 0, 1, 2 } },
         } },
         { "Fiji", {
+          { Name{"AMD Radeon (TM) R9 Fury Series                    "}, Params{ 0, 1, 32, 2, 32, 16, 128, 16, 16, 64, 1, 1, 1, 1, 2, 4 } },
           { Name{"AMD Radeon R9 Fury X                              "}, Params{ 0, 1, 32, 2, 16, 16, 64, 16, 16, 64, 1, 1, 0, 0, 4, 4 } },
           { Name{"AMD Radeon R9 M370X Compute Engine                "}, Params{ 0, 1, 32, 2, 16, 16, 64, 8, 16, 128, 0, 0, 0, 0, 2, 8 } },
           { kDeviceNameDefault                                        , Params{ 0, 1, 32, 2, 16, 16, 64, 8, 8, 64, 1, 1, 0, 0, 2, 4 } },
@@ -60,9 +61,10 @@ const DatabaseEntry XgemmSingle = {
     { // ARM GPUs
       kDeviceTypeGPU, "ARM", {
         { "default", {
+          { Name{"Mali-G71                                          "}, Params{ 1, 4, 1, 1, 16, 16, 64, 8, 8, 32, 0, 0, 0, 0, 4, 4 } },
           { Name{"Mali-T628                                         "}, Params{ 0, 1, 32, 2, 8, 8, 32, 8, 8, 64, 1, 1, 0, 0, 4, 4 } },
           { Name{"Mali-T760                                         "}, Params{ 0, 1, 32, 2, 16, 16, 64, 8, 8, 32, 1, 1, 0, 0, 4, 2 } },
-          { kDeviceNameDefault                                        , Params{ 0, 1, 32, 2, 16, 16, 64, 8, 8, 32, 1, 1, 0, 0, 4, 2 } },
+          { kDeviceNameDefault                                        , Params{ 0, 1, 32, 2, 8, 8, 32, 8, 8, 64, 1, 1, 0, 0, 4, 4 } },
         } },
       }
     },
@@ -77,6 +79,7 @@ const DatabaseEntry XgemmSingle = {
           { Name{"Intel(R) Core(TM) i7-3770 CPU @ 3.40GHz           "}, Params{ 0, 1, 32, 2, 32, 8, 128, 8, 8, 128, 1, 1, 1, 1, 2, 8 } },
           { Name{"Intel(R) Core(TM) i7-4790K CPU @ 4.00GHz          "}, Params{ 0, 1, 16, 2, 8, 8, 128, 8, 8, 128, 1, 1, 1, 0, 1, 8 } },
           { Name{"Intel(R) Core(TM) i7-5930K CPU @ 3.50GHz          "}, Params{ 0, 1, 32, 8, 16, 16, 64, 32, 32, 64, 0, 1, 1, 0, 1, 2 } },
+          { Name{"Intel(R) Core(TM) i7-6700K CPU @ 4.00GHz          "}, Params{ 0, 1, 32, 2, 16, 16, 32, 16, 16, 64, 1, 1, 0, 0, 2, 4 } },
           { Name{"Intel(R) Core(TM) i7-6770HQ CPU @ 2.60GHz         "}, Params{ 0, 1, 32, 2, 16, 32, 32, 8, 8, 64, 0, 1, 0, 0, 1, 8 } },
           { Name{"Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz         "}, Params{ 0, 1, 32, 2, 16, 8, 32, 8, 32, 128, 1, 1, 1, 1, 1, 4 } },
           { Name{"Intel(R) Xeon(R) CPU E5-2630 v4 @ 2.20GHz         "}, Params{ 1, 1, 1, 1, 16, 16, 16, 8, 8, 64, 0, 0, 0, 0, 1, 1 } },
@@ -87,6 +90,7 @@ const DatabaseEntry XgemmSingle = {
     { // Intel GPUs
       kDeviceTypeGPU, "Intel", {
         { "default", {
+          { Name{"Intel(R) Gen9 HD Graphics NEO                     "}, Params{ 1, 4, 1, 1, 8, 8, 64, 4, 4, 32, 0, 0, 0, 0, 4, 4 } },
           { Name{"Intel(R) HD Graphics 530                          "}, Params{ 0, 1, 32, 2, 8, 8, 128, 32, 16, 64, 0, 0, 1, 0, 4, 2 } },
           { Name{"Intel(R) HD Graphics 5500 BroadWell U-Processor GT"}, Params{ 0, 1, 32, 8, 8, 8, 64, 32, 16, 64, 1, 1, 1, 1, 4, 2 } },
           { Name{"Intel(R) HD Graphics 6000 BroadWell U-Processor GT"}, Params{ 1, 4, 1, 1, 8, 8, 64, 8, 8, 64, 0, 0, 0, 0, 4, 4 } },

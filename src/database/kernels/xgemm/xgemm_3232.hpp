@@ -76,10 +76,11 @@ const DatabaseEntry XgemmComplexSingle = {
           { Name{"Intel(R) Core(TM) i7-3770 CPU @ 3.40GHz           "}, Params{ 0, 1, 32, 2, 8, 8, 128, 16, 32, 128, 0, 0, 0, 0, 1, 4 } },
           { Name{"Intel(R) Core(TM) i7-4790K CPU @ 4.00GHz          "}, Params{ 0, 1, 32, 2, 8, 8, 128, 32, 8, 128, 0, 0, 0, 0, 1, 4 } },
           { Name{"Intel(R) Core(TM) i7-5930K CPU @ 3.50GHz          "}, Params{ 0, 1, 32, 2, 8, 16, 16, 16, 16, 128, 0, 0, 1, 1, 1, 4 } },
+          { Name{"Intel(R) Core(TM) i7-6700K CPU @ 4.00GHz          "}, Params{ 0, 1, 32, 2, 32, 32, 32, 16, 16, 64, 1, 1, 0, 0, 1, 4 } },
           { Name{"Intel(R) Core(TM) i7-6770HQ CPU @ 2.60GHz         "}, Params{ 0, 1, 32, 2, 16, 16, 16, 8, 16, 128, 0, 1, 0, 0, 1, 8 } },
           { Name{"Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz         "}, Params{ 1, 2, 1, 1, 16, 16, 16, 8, 8, 64, 0, 0, 0, 0, 1, 1 } },
           { Name{"Intel(R) Xeon(R) CPU E5-2630 v4 @ 2.20GHz         "}, Params{ 0, 1, 32, 2, 16, 16, 16, 8, 8, 32, 1, 1, 0, 0, 1, 4 } },
-          { kDeviceNameDefault                                        , Params{ 0, 1, 32, 2, 8, 8, 32, 8, 8, 32, 0, 0, 0, 0, 4, 2 } },
+          { kDeviceNameDefault                                        , Params{ 0, 1, 32, 2, 16, 16, 16, 8, 8, 16, 1, 1, 0, 0, 1, 2 } },
         } },
       }
     },
@@ -159,7 +160,7 @@ const DatabaseEntry XgemmComplexSingle = {
     { // Default
       kDeviceTypeAll, "default", {
         { "default", {
-          { kDeviceNameDefault                                        , Params{ 0, 1, 32, 2, 16, 16, 32, 8, 8, 32, 1, 1, 0, 0, 1, 4 } },
+          { kDeviceNameDefault                                        , Params{ 0, 1, 32, 2, 32, 32, 32, 8, 8, 32, 1, 1, 0, 0, 1, 4 } },
         } },
       }
     },
